@@ -179,7 +179,21 @@
                     <li><strong>✔ Гнучкі ціни</strong> – Пропонуємо доступні тарифи без прихованих платежів.</li>
                 </ul>
                 <p class="call-to-action">Обираючи Sweeper Clean, ви обираєте бездоганну чистоту та комфорт!</p>
-                <button class="cta-button">Зв’язатися з нами</button>
+                <button class="cta-button" data-modal-open>Зв’язатися з нами</button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/s4FeAy4q8-I?autoplay=1&mute=1&loop=1&playlist=s4FeAy4q8-I&controls=0&modestbranding=1&rel=0&showinfo=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+                </iframe>
             </div>
         </section>
     </main>
@@ -252,15 +266,20 @@
             </ul> -->
         </div>
     </footer>
-
+    <div class="beckdrop is-hidden" data-modal>
+        <div class="modal">
+           <button type="button" class="modal-close" data-modal-close>X</button>
+           <p class="modal-title">Контакти</p>
+           <ul class="Utility-box"> 
+            <li><a class="nav-link-modal" href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><a class="nav-link-modal" href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><a class="nav-link-modal" href="tel:+380441111111">+38 044 111 11 11</a></li>
+            <li><a class="nav-link-modal" href="tel:+380441111111">+38 044 111 11 11</a></li>
+        </ul>
+        </div>
+      </div>
    
-    <script>
-        const burgerMenu = document.querySelector('.burger-menu');
-        const menu = document.querySelector('.menu');
-
-        burgerMenu.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
+    <script src="./scriptBurger.js"></script>
+    <script src="./modalScropt.js"></script>
 </body>
 </html>

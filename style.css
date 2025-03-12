@@ -1,11 +1,19 @@
 /*------------- Base Styles ---------------*/
+
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     text-wrap: wrap;
 }
-html{
+
+html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -17,6 +25,8 @@ li {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -28,57 +38,47 @@ body {
     user-select: none;
     position: relative;
 }
+
 .no-scroll {
     overflow: hidden;
     height: 100vh;
 }
 
 main {
-    margin-top: 75px;
+    margin-top: 85px;
 }
-iframe{
+
+iframe, video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
+/*------------- Responsive Container ---------------*/
 
 .container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
-@media screen and (min-width: 320px) {
+
+@media screen and (max-width: 1200px) {
     .container {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        max-width: 1000px;
     }
 }
 
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1024px) {
     .container {
-        width: 720px;
-        padding-left: 10px;
-        padding-right: 10px;
+        max-width: 900px;
     }
 }
-@media screen and (min-width: 1024px) {
-    .container {
-        width: 975px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-   
-}
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
     .container {
-        width: 1160px;
+        max-width: 100%;
     }
-    
 }
 
 /* ---------------Header----------- */
@@ -153,7 +153,6 @@ iframe{
     display: none;
     flex-direction: column;
     gap: 5px;
-    cursor: pointer;
     padding: 12px 20px;
     border: none;
     border-radius: 50px;
@@ -279,7 +278,7 @@ iframe{
     top: -10px;
     left: 0;
     width: 300px; 
-    height: 90px; 
+    height: 150px; 
     overflow: hidden;
     pointer-events: none;
     z-index: 5;
@@ -290,10 +289,11 @@ iframe{
     bottom: 0;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
     animation: rise 4s infinite ease-in-out;
     opacity: 0;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 
 .bubble::after {
@@ -305,6 +305,7 @@ iframe{
     height: 8px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .bubble:nth-child(1) {
@@ -364,8 +365,9 @@ iframe{
     z-index: 1;
 }
 
+
 .hero-title {
-    font-size: 76px;
+    font-size: clamp(36px, 5vw, 76px);
     font-weight: bold;
     color: white;
     z-index: 2;
@@ -454,7 +456,6 @@ iframe{
 
 .about-item {
     padding: 10px;
-    height: 220px;
     max-width: 300px;
     background: #849EA4;
     border-radius: 17px;
@@ -482,10 +483,15 @@ iframe{
 }
 
 .prices-title {
-    font-size: 2rem;
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
+.prices-title>img{
+    margin-left: 10px;
+} 
 
 .prices-intro {
     font-size: 1.25rem;
@@ -595,7 +601,7 @@ iframe{
 
 .call-to-action {
     font-size: 40px;
-    color: #007bff;
+ 
     margin-top: 20px;
 }
 
@@ -639,7 +645,6 @@ h2 {
 .tagline {
     font-size: 1.2rem;
     text-align: center;
-    color: #3498db;
     margin: 20px 0;
 }
 

@@ -393,6 +393,14 @@ iframe, video {
     height: 3px;
     background: white;
 }
+@media screen and (max-width: 1024px) {
+    .hero-title>span::before{
+        width: 45px;
+    }
+    .hero-title>span::after{
+        width: 45px;
+    }
+}
 .hero-hero-after-title {
     font-size: 56px;
     text-align: center;
@@ -448,17 +456,27 @@ iframe, video {
 
 .about-list {
     display: flex;
-    align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
+    align-items: stretch; 
 }
 
 .about-item {
     padding: 10px;
     max-width: 300px;
+    width: 100%;
     background: #849EA4;
     border-radius: 17px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.about-item p {
+    flex-grow: 1; 
+}
+.about-item img{
+    width: 65px;
 }
 
 .about-item>h3 {

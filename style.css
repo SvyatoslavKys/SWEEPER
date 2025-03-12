@@ -465,7 +465,7 @@ iframe, video {
 .about-item {
     padding: 10px;
     max-width: 300px;
-    width: 100%;
+    width: 100%; 
     background: #849EA4;
     border-radius: 17px;
     display: flex;
@@ -475,6 +475,7 @@ iframe, video {
 .about-item p {
     flex-grow: 1; 
 }
+
 .about-item img{
     width: 65px;
 }

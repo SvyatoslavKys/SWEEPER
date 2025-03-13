@@ -454,7 +454,7 @@ iframe, video {
 }
 
 .about-container>h2 {
-    font-size: clamp(30px, 5vw, 50px);
+    font-size: clamp(30px, 2vw, 50px);
     text-align: center;
     margin-bottom: 50px;
     white-space: wrap;
@@ -508,7 +508,7 @@ iframe, video {
 }
 
 .prices-title {
-    font-size: clamp(29px, 5vw, 36px);
+    font-size: clamp(29px, 2vw, 36px);
     color: #333;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -520,7 +520,7 @@ iframe, video {
 } 
 
 .prices-intro {
-    font-size: clamp(16px, 5vw, 25px);
+    font-size: clamp(16px, 2vw, 25px);
     color: #555;
     margin-bottom: 30px;
 }
@@ -598,7 +598,7 @@ iframe, video {
     }
 }
 .prices-item h3 {
-    font-size: clamp(16px, 5vw, 25px);
+    font-size: clamp(16px, 2vw, 25px);
     color: #333;
     margin-bottom: 15px;
 }
@@ -610,7 +610,7 @@ iframe, video {
 }
 
 .service-list li {
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #444;
     margin-bottom: 10px;
 }
@@ -620,13 +620,13 @@ iframe, video {
 }
 
 .note {
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #666;
     margin-top: 10px;
 }
 
 .call-to-action {
-    font-size: clamp(25px, 5vw, 40px);
+    font-size: clamp(25px, 2vw, 40px);
     margin-top: 20px;
 }
 
@@ -639,7 +639,7 @@ iframe, video {
 }
 
 h2 {
-    font-size: clamp(25px, 5vw, 36px);
+    font-size: clamp(25px, 2vw, 36px);
     color: #2c3e50;
     text-align: center;
     margin-bottom: 30px;
@@ -705,7 +705,7 @@ h2 {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
@@ -722,13 +722,13 @@ h2 {
 }
 
 .why-choose h2 {
-    font-size: clamp(30px, 5vw, 36px);
+    font-size: clamp(30px, 2vw, 36px);
     color: #333;
     margin-bottom: 20px;
 }
 
 .why-choose .tagline {
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #555;
     margin-bottom: 30px;
 }
@@ -789,7 +789,7 @@ footer {
 }
 
 .footer-container h3 {
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     margin-bottom: 16px;
 }
 
@@ -958,7 +958,7 @@ footer {
 }
 
 .modal-title {
-    font-size: clamp(26px, 5vw, 36px);
+    font-size: clamp(26px, 2vw, 36px);
     font-weight: 600;
     margin-bottom: 20px;
     color: #2c3e50;
@@ -977,7 +977,7 @@ footer {
 .nav-link-modal {
     color: #3498db;
     text-decoration: none;
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: color 300ms;
 }
 
@@ -1010,12 +1010,12 @@ footer {
     margin-top: 20px;
     color: #3498db;
     text-decoration: none;
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: 300ms;
 }
 
 .modal a[href^="mailto:"]:hover {
-    font-size: clamp(16px, 5vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #e74c3c;
 }
 

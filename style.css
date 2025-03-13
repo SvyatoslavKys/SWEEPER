@@ -34,7 +34,7 @@ a {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'rubik', sans-serif;
     user-select: none;
     position: relative;
 }
@@ -79,6 +79,11 @@ iframe, video {
     .container {
         max-width: 100%;
     }
+}
+
+.container>img {
+   
+    margin: 0 auto;
 }
 
 /* ---------------Header----------- */
@@ -374,6 +379,7 @@ iframe, video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
 }
 .hero-title>span{
     display: flex;
@@ -433,10 +439,7 @@ iframe, video {
     }
 }
 @media screen and (max-width: 768px) {
-    .hero-title {
-        font-size: 36px;
-        
-    }
+  
     .hero-hero-after-title {
         font-size: 26px;
         
@@ -450,8 +453,10 @@ iframe, video {
 }
 
 .about-container>h2 {
+    font-size: clamp(30px, 5vw, 50px);
     text-align: center;
     margin-bottom: 50px;
+    white-space: wrap;
 }
 
 .about-list {
@@ -502,8 +507,9 @@ iframe, video {
 }
 
 .prices-title {
-    font-size: 30px;
+    font-size: clamp(29px, 5vw, 36px);
     color: #333;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -513,7 +519,7 @@ iframe, video {
 } 
 
 .prices-intro {
-    font-size: 1.25rem;
+    font-size: clamp(16px, 5vw, 25px);
     color: #555;
     margin-bottom: 30px;
 }
@@ -591,7 +597,7 @@ iframe, video {
     }
 }
 .prices-item h3 {
-    font-size: 1.5rem;
+    font-size: clamp(16px, 5vw, 25px);
     color: #333;
     margin-bottom: 15px;
 }
@@ -603,7 +609,7 @@ iframe, video {
 }
 
 .service-list li {
-    font-size: 1.1rem;
+    font-size: clamp(16px, 5vw, 20px);
     color: #444;
     margin-bottom: 10px;
 }
@@ -613,28 +619,26 @@ iframe, video {
 }
 
 .note {
-    font-size: 1rem;
+    font-size: clamp(16px, 5vw, 20px);
     color: #666;
     margin-top: 10px;
 }
 
 .call-to-action {
-    font-size: 40px;
- 
+    font-size: clamp(25px, 5vw, 40px);
     margin-top: 20px;
 }
 
 /*--------------- dop-Prices Section ----------------*/
-/* General Styles */
+
 .dop-prices {
     background-color: #f9f9f9;
     padding: 40px 0;
-    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: clamp(25px, 5vw, 36px);
     color: #2c3e50;
     text-align: center;
     margin-bottom: 30px;
@@ -651,7 +655,7 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
+    font-size: clamp(16px, 2vw, 20px);
     display: flex;
     align-items: center;
 }
@@ -662,13 +666,13 @@ h2 {
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: clamp(16px, 2vw, 20px);
     text-align: center;
     margin: 20px 0;
 }
 
 .note {
-    font-size: 0.9rem;
+    font-size: clamp(16px, 2vw, 20px);
     text-align: center;
     color: #888;
     margin-top: 20px;
@@ -679,18 +683,13 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 768px) {
-    h2 {
-        font-size: 2rem;
-    }
-
+   
  .benefits-list li {
-        font-size: 1rem;
+       
         padding: 10px;
     }
 
-    .tagline {
-        font-size: 1rem;
-    }
+   
 }
 .cta-container {
     text-align: center;
@@ -705,7 +704,7 @@ h2 {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: clamp(16px, 5vw, 20px);
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
@@ -722,20 +721,20 @@ h2 {
 }
 
 .why-choose h2 {
-    font-size: 2.5rem;
+    font-size: clamp(30px, 5vw, 36px);
     color: #333;
     margin-bottom: 20px;
 }
 
 .why-choose .tagline {
-    font-size: 1.25rem;
+    font-size: clamp(16px, 5vw, 20px);
     color: #555;
     margin-bottom: 30px;
 }
 .photo-box{
-display: flex;
-justify-content: center;
-padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }
 .photo-box-list{
     display: flex;
@@ -789,7 +788,7 @@ footer {
 }
 
 .footer-container h3 {
-    font-size: 18px;
+    font-size: clamp(16px, 5vw, 20px);
     margin-bottom: 16px;
 }
 
@@ -958,7 +957,7 @@ footer {
 }
 
 .modal-title {
-    font-size: 1.5rem; 
+    font-size: clamp(26px, 5vw, 36px);
     font-weight: 600;
     margin-bottom: 20px;
     color: #2c3e50;
@@ -977,7 +976,7 @@ footer {
 .nav-link-modal {
     color: #3498db;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: clamp(16px, 5vw, 20px);
     transition: color 300ms;
 }
 
@@ -1010,11 +1009,12 @@ footer {
     margin-top: 20px;
     color: #3498db;
     text-decoration: none;
-    font-size: 1rem; 
+    font-size: clamp(16px, 5vw, 20px);
     transition: 300ms;
 }
 
 .modal a[href^="mailto:"]:hover {
+    font-size: clamp(16px, 5vw, 20px);
     color: #e74c3c;
 }
 
@@ -1025,22 +1025,11 @@ footer {
         padding: 15px;
     }
 
-    .modal-title {
-        font-size: 1.4rem;
-    }
-
-    .nav-link-modal {
-        font-size: 0.9rem;
-    }
-
     .social-item {
         width: 20px;
         height: 20px;
     }
 
-    .modal a[href^="mailto:"] {
-        font-size: 0.9rem;
-    }
 }
 
 
@@ -1049,22 +1038,12 @@ footer {
         max-width: 350px;
     }
 
-    .modal-title {
-        font-size: 1.5rem;
-    }
-
-    .nav-link-modal {
-        font-size: 1rem;
-    }
 
     .social-item {
         width: 24px;
         height: 24px;
     }
 
-    .modal a[href^="mailto:"] {
-        font-size: 1rem;
-    }
 }
 
 @media screen and (min-width: 425px) {
@@ -1072,22 +1051,11 @@ footer {
         max-width: 400px;
     }
 
-    .modal-title {
-        font-size: 1.6rem;
-    }
-
-    .nav-link-modal {
-        font-size: 1.1rem;
-    }
-
     .social-item {
         width: 28px;
         height: 28px;
     }
 
-    .modal a[href^="mailto:"] {
-        font-size: 1.1rem;
-    }
 }
 
 
@@ -1097,22 +1065,11 @@ footer {
         padding: 30px;
     }
 
-    .modal-title {
-        font-size: 2rem;
-    }
-
-    .nav-link-modal {
-        font-size: 1.2rem;
-    }
-
     .social-item {
         width: 32px;
         height: 32px;
     }
 
-    .modal a[href^="mailto:"] {
-        font-size: 1.2rem;
-    }
 }
 
 
@@ -1122,20 +1079,9 @@ footer {
         padding: 40px;
     }
 
-    .modal-title {
-        font-size: 2.2rem;
-    }
-
-    .nav-link-modal {
-        font-size: 1.3rem;
-    }
-
     .social-item {
         width: 36px;
         height: 36px;
     }
 
-    .modal a[href^="mailto:"] {
-        font-size: 1.3rem;
-    }
 }

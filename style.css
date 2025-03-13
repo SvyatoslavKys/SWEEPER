@@ -508,7 +508,7 @@ iframe, video {
 }
 
 .prices-title {
-    font-size: clamp(29px, 2vw, 36px);
+    font-size: clamp(25px, 2vw, 36px);
     color: #333;
     margin-top: 20px;
     margin-bottom: 20px;

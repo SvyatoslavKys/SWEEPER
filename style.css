@@ -353,9 +353,9 @@ iframe, video {
     align-items: center;
     flex-direction: column;
     padding: 200px 0;
-    background-image: url('./src/img/content/hero-3.jpg');
+    background-image: url('./src/img/content/Hero-bg.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -367,7 +367,7 @@ iframe, video {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(32, 32, 32, 0.2);
+    background: rgba(32, 32, 32, 0.4);
     z-index: 1;
 }
 
@@ -411,7 +411,7 @@ iframe, video {
 .hero-hero-after-title {
     font-size: 56px;
     text-align: center;
-    color: white;
+    color: white ;
     background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient(90deg, #a9fc3d, #03ffd5, #a9fc3d);

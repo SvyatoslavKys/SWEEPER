@@ -355,7 +355,7 @@ iframe, video {
     padding: 200px 0;
     background-image: url('./src/img/content/hero-3.jpg');
     background-size: cover;
-    background-position: left;
+    background-position: right center;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -766,19 +766,41 @@ footer {
 }
 
 .footer-container {
-    max-width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
 }
-
+@media (max-width: 768px) {
+    .nav-linl-box{
+       flex-direction: column;
+       align-items: center;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-logo-footer{
+        margin: 0;
+    }
+    .footer-container h3 {
+        text-align: center;
+    }
+    .footer-container li {
+        text-align: center;
+    }
+}
+.nav-linl-box{
+    display: flex;
+    gap: 20px;
+}
 .footer-container ul {
     list-style: none;
     padding: 0;
     max-width: 340px;
 }
+
 
 .footer-container li {
     margin-bottom: 16px;

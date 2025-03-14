@@ -359,7 +359,12 @@ iframe, video {
     background-repeat: no-repeat;
     overflow: hidden;
 }
-
+@media screen and (max-width: 768px) {
+    .hero-container{
+        background-image: url('./src/img/content/hero-3.jpg');
+        background-position: left center;
+    }
+}
 .hero-container::before {
     content: '';
     position: absolute;

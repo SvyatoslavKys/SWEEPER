@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./src/svg/sweeper-logo.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/svg/sweeper-logo.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/svg/sweeper-logo.svg">
@@ -238,17 +240,18 @@
                 </ul>
                 <p class="tagline">Ми пропонуємо широкий спектр послуг, щоб Ваш дім сяяв чистотою:</p>
                 <ul class="benefits-list">
-                    <li><i class="fas fa-fire"></i> <strong>Миття духовки</strong> – 399 грн</li>
-                    <li><i class="fas fa-fan"></i> <strong>Миття витяжки</strong> – 299 грн</li>
+                    <li><i class="fas fa-fire"></i> <strong>Миття духовки</strong> – 449 грн</li>
+                    <li><i class="fas fa-fan"></i> <strong>Миття витяжки</strong> – 349 грн</li>
                     <li><i class="fas fa-cabinet-filing"></i> <strong>Прибирання в кухонних шафках</strong> – 599 грн</li>
-                    <li><i class="fas fa-utensils"></i> <strong>Миття посуду</strong> – 249 грн</li>
-                    <li><i class="fas fa-snowflake"></i> <strong>Чистка холодильника</strong> – 349 грн</li>
-                    <li><i class="fas fa-microchip"></i> <strong>Миття мікрохвильовки</strong> – 199 грн</li>
-                    <li><i class="fas fa-balcony"></i> <strong>Прибирання балкону</strong> – 249 грн</li>
-                    <li><i class="fas fa-tshirt"></i> <strong>Прасування</strong> – 249 грн</li>
-                    <li><i class="fas fa-paw"></i> <strong>Чистка лотка для тварин</strong> – 149 грн</li>
-                    <li><i class="fas fa-wardrobe"></i> <strong>Прибирання в шафі</strong> – 299 грн</li>
-                    <li><i class="fas fa-window"></i> <strong>Миття вікон</strong> – від 99 грн</li>
+                    <li><i class="fas fa-utensils"></i> <strong>Миття посуду</strong> – 349 грн</li>
+                    <li><i class="fas fa-snowflake"></i> <strong>Чистка холодильника</strong> – 449 грн</li>
+                    <li><i class="fas fa-microchip"></i> <strong>Миття мікрохвильовки</strong> – 249 грн</li>
+                    <li><i class="fas fa-balcony"></i> <strong>Прибирання балкону</strong> – 449 грн</li>
+                    <li><i class="fas fa-tshirt"></i> <strong>Прасування</strong> – 3492 грн</li>
+                    <li><i class="fas fa-paw"></i> <strong>Чистка лотка для тварин</strong> – 249 грн</li>
+                    <li><i class="fas fa-wardrobe"></i> <strong>Прибирання в шафі</strong> – 399 грн</li>
+                    <li><i class="fas fa-window"></i> <strong>Миття вікон з обох сторін</strong> – 199 грн м.кв</li>
+                    <li><i class="fas fa-tshirt"></i> <strong>Хімчистка килимового покриття від</strong> – 120 грн м кв</li>
                 </ul>
                 <p class="note">💡 Ціни приблизні та залежать від складності роботи.</p>
             </div>
@@ -268,11 +271,16 @@
                 </ul>
                 <p class="call-to-action">Обираючи SWEEPER clean – ви обираєте бездоганну чистоту та комфорт!</p>
                 <div class="photo-box">
-                    <ul class="photo-box-list">
-                        <li class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft.jpg" alt=""></li>
-                        <li class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft2.jpg" alt=""></li>
-                    </ul>
+                    <div class="photo-box-list autoplay">
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft.jpg" alt=""></div>
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft2.jpg" alt=""></div>
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft3.jpg" alt=""></div>
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft4.jpg" alt=""></div>
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft5.jpg" alt=""></div>
+                        <div class="photo-box-item"><img src="./src/img/photo/before-after/bef-aft6.jpg" alt=""></div>
+                    </div>
                 </div>
+            
                 <button class="cta-button" data-modal-open>Зв’язатися з нами</button>
             </div>
         </section>
@@ -433,5 +441,8 @@
     <script type="module" src="./scriptBurger.js"></script>
     <script type="module" src="./modalScropt.js"></script>
     <script type="module" src="./autoplay.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script type="module" src="./carousel.js"></script>
 </body>
 </html>

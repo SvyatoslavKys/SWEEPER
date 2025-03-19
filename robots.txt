@@ -1,0 +1,22 @@
+User-Agent: Bingbot
+Disallow: *search
+Disallow: /commerce/digital-download/
+Disallow: /*_openstat
+Disallow: /*from=adwords
+Disallow: /*gclid=
+
+User-Agent: Googlebot
+Disallow: *search
+Disallow: /commerce/digital-download/
+Disallow: /*_openstat
+Disallow: /*from=adwords
+Disallow: /*gclid=
+
+User-Agent: *
+Disallow: *search
+Disallow: /commerce/digital-download/
+Disallow: /*_openstat
+Disallow: /*from=adwords
+Disallow: /*gclid=
+
+Sitemap: https://sweeperclean.com.ua/sitemap.xml

@@ -6,6 +6,8 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         arrows: true,
         dots: true,
+        centerMode: true,
+        variableWidth: false,
         responsive: [
             {
                 breakpoint: 768,
@@ -28,5 +30,9 @@ $(document).ready(function(){
 
     $('.autoplay').on('mouseleave', function() {
         $(this).slick('slickPlay');
+    });
+
+    $('.photo-box-item').on('click', function() {
+        $(this).toggleClass('open');
     });
 });

@@ -1191,3 +1191,27 @@ footer {
     }
 
 }
+/* ---------------slik-------------- */
+.slick-prev, .slick-next {
+    z-index: 10;
+    background-color: black !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.slick-prev:hover, .slick-next:hover {
+    background-color: black !important;
+}
+/* .photo-box-item.open img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+} */

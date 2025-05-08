@@ -101,6 +101,31 @@ iframe, video {
     box-shadow: 30px 30px 60px #d9d9d9, -30px -30px 60px #ffffff;
     z-index: 10;
 }
+.tg{
+    position: absolute;
+    top: 80vh;
+    right: 20px;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.3s ease;
+}
+.tg:hover img {
+    animation: none;
+    transform: scale(1.2);
+  }
+  @media screen and (min-width: 768px) {
+    .tg img{
+        width: 60px;
+        height: 60x;
+    }
+}
+  
+  @keyframes pulse {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.2); }
+    60%  { transform: scale(1); }
+    100% { transform: scale(1); }
+  }
+
 
 .nav-container {
     position: relative;
@@ -743,11 +768,18 @@ h2 {
     margin-bottom: 30px;
 }
 .photo-box {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  
+    .photo-box {
+       
+        padding: 10px;
+    }
 }
 .photo-box-list {
     display: flex;

@@ -101,23 +101,28 @@ iframe, video {
     box-shadow: 30px 30px 60px #d9d9d9, -30px -30px 60px #ffffff;
     z-index: 10;
 }
-.tg{
+.tg {
     position: absolute;
     top: 80vh;
     right: 20px;
+  }
+  
+  .tg img {
     animation: pulse 1.5s infinite;
-    transition: transform 0.3s ease;
-}
-.tg:hover img {
+    transition: 0.3s ease-in-out;
+  }
+  
+  .tg:hover img {
     animation: none;
     transform: scale(1.2);
   }
+  
   @media screen and (min-width: 768px) {
-    .tg img{
-        width: 60px;
-        height: 60x;
+    .tg img {
+      width: 60px;
+      height: 60px;
     }
-}
+  }
   
   @keyframes pulse {
     0%   { transform: scale(1); }

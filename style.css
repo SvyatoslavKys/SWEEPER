@@ -975,6 +975,9 @@ footer {
     color: aliceblue;
 }
 
+li>.footer-link__gray{
+    color: #849EA4;
+}
 
 
 @media (max-width: 1200px) {

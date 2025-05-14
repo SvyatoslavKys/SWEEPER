@@ -31,7 +31,7 @@ a {
 
 body {
     font-family: 'rubik', sans-serif;
-    user-select: none;
+    /* user-select: none; */
     position: relative;
 }
 
@@ -204,7 +204,20 @@ iframe, video {
     cursor: pointer;
     transition: 0.3s;
 }
-
+.nav-li{
+    display: flex;
+    gap: 15px;
+}
+@media screen and (max-width: 768px) {
+    .nav-li{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-li>.nav-link{
+        font-size: clamp(15px, 4vw, 18px);
+    }
+}
 
 .burger-menu:hover {
     background: #777;
@@ -222,14 +235,27 @@ iframe, video {
     flex-direction: column;
     gap: 4px;
 }
-
+.nav-link-phone{
+    font-size: clamp(13px, 4vw, 18px);
+    padding: 10px 0;
+    color: #ffffff;
+    transition: 300ms;
+    transform: scale(1);
+}
 .nav-link {
     padding: 10px 0;
     color: #ffffff;
     transition: 300ms;
     transform: scale(1);
 }
-
+.nav-link-phone:hover{
+    animation: moveNavLink 500ms linear infinite, scaleUp 500ms ease-in-out;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #0a0d16, #7b7ffe, #0a0d16);
+    background-size: 200% 100%;
+}
 .nav-link:hover {
     animation: moveNavLink 500ms linear infinite, scaleUp 500ms ease-in-out;
     color: transparent;
@@ -282,7 +308,7 @@ iframe, video {
     }
 
     .menu.active {
-        display: block;
+        display: flex;
         /* width: 65px; */
     }
 
@@ -291,7 +317,7 @@ iframe, video {
         width: 65px;
     }
     .nav-link{
-        font-size: clamp(13px, 4vw, 18px);
+        font-size: clamp(18px, 2vw, 22px);
     }
     .menu.active .social-list-menu{
         display: flex;
@@ -1249,6 +1275,10 @@ li>.footer-link__gray{
       }
 
 }
+.lang-btn{
+    display: flex;
+    align-items: center;
+}
   
   .lang-btn {
     background: none;
@@ -1257,6 +1287,12 @@ li>.footer-link__gray{
     font-size: 18px;
     padding: 10px;
   }
+  @media screen and (max-width: 769px) {
+    .lang-btn  {
+        padding: 0;
+      }
+
+}
   
   .lang-menu {
     position: absolute;

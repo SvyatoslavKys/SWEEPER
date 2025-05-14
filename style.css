@@ -1268,6 +1268,7 @@ li>.footer-link__gray{
 .language-selector-menu {
     position: relative;
     display: inline-block;
+    max-width: 90px;
   }
   @media screen and (min-width: 769px) {
     .language-selector-menu {

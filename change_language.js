@@ -132,7 +132,7 @@ const translations = {
     adviseTip5Step1: 'Сода або кава',
     adviseTip5Step1Text: 'поставте в холодильник відкриту ємність із содою чи меленою кавою, і вони вбиратимуть запахи.',
     clientMessage: 'SWEEPER clean - кожен клієнт для нас головний',
-    slogan: 'Чистота в деталях.',
+    slogan: 'Чистота в деталях',
     footerNav: 'Навігація',
     footerContact1: 'Контакти',
     footerContact2: 'Контакти',
